@@ -1,0 +1,81 @@
+<!-- Sección de login -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="index.css">
+  <title>SebsCast - Tu Mundo de Videojuegos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>🎮 SebsCast</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Juegos</a></li>
+        <li><a href="#">Noticias</a></li>
+        <li><a href="#">Foro</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Slider de juegos -->
+  <section class="slider">
+    <div class="slider-container">
+      <div class="slider-item">
+        <!--juego 1 -->
+        <img src="imagenes/juego1cyberstrike.jpg" alt="Juego 1">
+        <h3>Cyber Strike</h3>
+      </div>
+      <div class="slider-item">
+        <img src="imagenes/juego2fantasyrealms.png" alt="Juego 2">
+        <h3>Fantasy Realms</h3>
+      </div>
+      <div class="slider-item">
+        <img src="imagenes/juego3SpeedLegends.jpg" alt="Juego 3">
+        <h3>Speed Legends</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de login -->
+  <section class="login">
+  <h2>Iniciar sesión</h2>
+  <form action="#" method="POST" id="loginForm">
+    <div class="form-group">
+      <label for="username">Usuario</label>
+      <input type="text" id="username" name="username" required placeholder="Tu nombre de usuario">
+      <span class="error-message" id="usernameError">El nombre de usuario es obligatorio</span>
+    </div>
+    <div class="form-group">
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" name="password" required placeholder="Tu contraseña">
+      <span class="error-message" id="passwordError">La contraseña es obligatoria</span>
+    </div>
+    <div class="form-group">
+      <label for="rememberMe">
+        <input type="checkbox" id="rememberMe" name="rememberMe">
+        Recordarme
+      </label>
+    </div>
+    <button type="submit" class="btn">Entrar</button>
+    <div class="form-footer">
+      <a href="#">¿Olvidaste tu contraseña?</a>
+      <span>o</span>
+      <a href="#">Crear cuenta</a>
+    </div>
+  </form>
+</section>
+
+  <footer>
+    <p>&copy; 2025 Zona Gamer. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
+
+

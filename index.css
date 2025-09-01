@@ -1,0 +1,261 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #111;
+  color: #fff;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #1f1f1f;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 4px solid #00ffcc;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+}
+
+/* Slider de juegos */
+.slider {
+  margin: 40px 0;
+  overflow: hidden;
+}
+
+.slider-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+  min-width: 100%;
+  text-align: center;
+}
+
+.slider-item img {
+  width: 10%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.slider-item h3 {
+  margin-top: 10px;
+  font-size: 1.8em;
+}
+
+/* Estilo para la sección de login */
+.login {
+  background-color: #222;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 400px;
+}
+
+.login h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.login .form-group {
+  margin-bottom: 15px;
+}
+
+.login label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #00ffcc;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+.login button {
+  background-color: #00ffcc;
+  color: #000;
+  padding: 12px 24px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+.login button:hover {
+  background-color: #00ccb3;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  .slider-item h3 {
+    font-size: 1.5em;
+  }
+
+  .login {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .slider-item h3 {
+    font-size: 1.3em;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1f1f1f;
+  border-top: 4px solid #00ffcc;
+  font-size: 0.9em;
+}
+
+
+
+/* Estilo mejorado para el formulario de login */
+.login {
+  background-color: #222;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 400px;
+}
+
+.login h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #00ffcc;
+}
+
+.login .form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.login label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ddd;
+}
+
+.login input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #00ffcc;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.login input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+.login button {
+  background-color: #00ffcc;
+  color: #000;
+  padding: 12px 24px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+.login button:hover {
+  background-color: #00ccb3;
+}
+
+/* Mensajes de error */
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: left;
+  transform: translateY(-50%);
+}
+
+/* Estilo para los enlaces y footer del formulario */
+.form-footer {
+  margin-top: 20px;
+}
+
+.form-footer a {
+  color: #00ffcc;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.form-footer a:hover {
+  color: #ffffff;
+}
+
+.form-footer span {
+  color: #888;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .login {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .login h2 {
+    font-size: 1.8em;
+  }
+  .login button {
+    width: 100%;
+  }
+}
